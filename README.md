@@ -19,3 +19,7 @@ And hence why this project exists - for serverless coffee and testing the limits
 ## Goal
 The goal here is to have a complete DevOps pipeline - but in order to test that pipeline we need to have something to test it with!
 Queue this project.
+
+## To Get Started
+1. Clone the repo
+2. Run dev_start.ps1 in a powershell window (run it from the repository root). This will setup the python virtual environment for the tests
