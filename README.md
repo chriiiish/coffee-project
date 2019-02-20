@@ -23,3 +23,13 @@ Queue this project.
 ## To Get Started
 1. Clone the repo
 2. Run dev_start.ps1 in a powershell window (run it from the repository root). This will setup the python virtual environment for the tests
+
+## Project Structure
+    .
+    ├── api                   # The serverless API that powers the app
+    ├── api-unit-tests        # API unit tests
+    ├── load-tests            # Load tests
+    ├── .gitignore            
+    ├── dev_start.ps1         # A script that sets up the python virtual environment
+    ├── LICENSE
+    └── README.md
