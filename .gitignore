@@ -2,8 +2,13 @@
 env/*
 *__pycache__*
 
-#vscode
+# vscode
 .vscode/settings.json
 
 # PyLint 
 .pylintrc
+
+# API (dotnetcore)
+**/bin/**
+**/obj/**
+**/.vs/**
