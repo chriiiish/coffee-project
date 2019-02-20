@@ -14,6 +14,9 @@ Then install the required dependencies:
 pip install -r requirements.txt
 ```
 
+**NOTE**
+The faster way is to just run ```.\dev_start.ps1``` from the root of the repository
+
 -----
 
 Running the locust tests:
