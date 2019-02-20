@@ -1,6 +1,6 @@
 # Python Virtual Environment
 env/*
-*/__pycache__/*
+*__pycache__*
 
 #vscode
 .vscode/settings.json
