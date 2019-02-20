@@ -1,6 +1,21 @@
 # Load Tests
 Load tests are done using Locust (https://locust.io/)
 
+## Project Structure
+    .
+    ├── common               # Shared load test logic (e.g. auth)
+    ├── locustfiles          # The actual load test scripts
+    ├── __init__.py          
+    ├── README.md            
+    └── requirements.txt     # Required Pip packages to get things to run
+    
+## Getting started
+
+### Virtual environment
+
+**NOTE:**
+The faster way is to just run ```.\dev_start.ps1``` from the root of the repository
+
 These are python tests. As such you will need to setup a virtual python environment by following the instructions here:
 https://programwithus.com/learn-to-code/Pip-and-virtualenv-on-Windows/
 
@@ -14,10 +29,7 @@ Then install the required dependencies:
 pip install -r requirements.txt
 ```
 
-**NOTE:**
-The faster way is to just run ```.\dev_start.ps1``` from the root of the repository
-
------
+### Running the tests
 
 Running the locust tests:
 
@@ -29,11 +41,3 @@ locust -f basic_load_test.py --host=<your host> --no-web --clients=100 --hatch-r
 Where:
 * --host=https://google.com/ (must include http at the start)
 * --run-time=<30s|2m|6h>
-
-# Project Structure
-    .
-    ├── common               # Shared load test logic (e.g. auth)
-    ├── locustfiles          # The actual load test scripts
-    ├── __init__.py          
-    ├── README.md            
-    └── requirements.txt     # Required Pip packages to get things to run
